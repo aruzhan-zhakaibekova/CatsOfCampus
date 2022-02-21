@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title> Cats of Campus </title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer> </script>
   </head>
   <body>
 
@@ -12,21 +13,29 @@
     <h1> Cats of NYUAD Campus </h1>
 
         <div id="btn"> <!--buttons in the menu-->
-    <a href="https://www.instagram.com/campus.cats/?hl=en"> <button class="btn1"> <span> Meow </span> </button> </a>
-    <a href="https://www.thegazelle.org/issue/151/features/cat-photo-essay"> <button class="btn2"> <span> Meow </span> </button> </a>
-    <a href="https://www.youtube.com/watch?v=LC2akgHek0Q"> <button class="btn3"> <span> Meow </span> </button> </a>
+    <a href="https://www.instagram.com/campus.cats/?hl=en"> <button class="btn1"> Meow </button> </a>
+    <a href="https://www.thegazelle.org/issue/151/features/cat-photo-essay"> <button class="btn2">  Meow </button> </a>
+    <a href="https://www.youtube.com/watch?v=LC2akgHek0Q"> <button class="btn3">  Meow  </button> </a>
         </div>
       </div>
-
+      <div class="progress-bar">
+        <div class="progress-bar-inner"> 0% </div>
+      </div>
     </div>
-
+<div class="container">
 <div id="main">
   <div class="transition">
-  <h2> Nice to meowt you! </h2>
-  <p> Let us introduce ourselves! </p>
-</div>
-    <div id="main-gingerbell" class="section"> <!--Gingerbell section-->
+  <h2 class="text-anim"> <strog> Nice to meowt you! </strong> </h2>
+  </div>
 
+    <div id="main-cards">
+    <div id="main-gingerbell" class="card"> <!--Gingerbell section-->
+      <div class="card-inner">
+      <div class="card-face-front">
+      <h3> Mystery Cat #1 </h3>
+      </div>
+
+      <div class="card-face-back">
         <img src="gingerbell.png" alt="gingerbell">
           <div class="desc">
             <h3> Gingerbell </h3>
@@ -34,10 +43,17 @@
             <p> While there are several orange cats on campus, Gingerbell is like no other! Fierce and playful, Gingerbell is ready to take on the world. </p>
           </div>
       </div>
+       </div>
+      </div>
 
 
-      <div id="main-solo" class="section">   <!--Solo section-->
+      <div id="main-solo" class="card">
+        <div class="card-inner">   <!--Solo section-->
+        <div class="card-face-front">
+        <h3> Mystery Cat #2 </h3>
+        </div>
 
+          <div class="card-face-back">
           <img src="solo.png" alt="solo">
             <div class="desc">
               <h3> Solo </h3>
@@ -48,29 +64,38 @@
                   <li> Only talks to you when he's in the mood </li>
                   <li> Legendary acrobatic skills </li>
                   <li> Only talks to you when he's in the mood </li>
+          </div>
+          </div>
             </div>
           </div>
 
 
-        <div id="main-boss" class="section"> <!--Boss section-->
+        <div id="main-boss" class="card"> <!--Boss section-->
+          <div class="card-inner">
+          <div class="card-face-front">
+          <h3> Mystery Cat #3 </h3>
+          </div>
 
+          <div class="card-face-back">
            <img src="boss.png" alt="boss">
             <div class="desc">
               <h3> Boss </h3>
               <h4> Bossin' around the Christmas tree or any tree to be honest </h4>
               <p> Hugo Boss. The Boss Baby. I've exhausted my references! Sincerely, Boss </p>
-                  </div>
+            </div>
+            </div>
+          </div>
               </div>
-
+          </DIV>
 
 
           <div id="main-vid-text">
             <h2> Do you want to experience what it is like to be a Campus Cat? </h2>
           </div>
           <div id="main-video"> <!--a relevant video embedded-->
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/ilW1Rd6rwDA" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/ilW1Rd6rwDA" title="YouTube video player" frameborder="0" allowfullscreen onclick="playAudio('cat-meow7.wav')"> </iframe>
           </div>
-
+</div>
 
 </div>
           <div id="footer"> <!--footer section-->
