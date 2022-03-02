@@ -50,3 +50,15 @@ function complete(){
   clearInterval(timer);
   timer = "null";
 }
+
+AOS.init();
+
+
+	var sound = new Howl({
+		src: ['cat-meow.mp3'],
+		volume: 0.5
+	});
+
+	$(".card").on("click", function(){
+		sound.play();
+	});

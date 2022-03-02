@@ -8,6 +8,7 @@ html {
 
 body, h1, h2, h3, h4, h5, h6 {
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -85,6 +86,8 @@ button:hover {
   display: inline-block;
   text-align: center;
 }
+
+
 
 .transition {
   font-size: 2rem;
@@ -183,18 +186,35 @@ span.fade {
   padding-right: 5px;
 }
 
+.grid {
+  padding-bottom: 40px;
+  display: grid;
+  max-width: 1200px;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 0.2fr 1fr;
+  align-items: center;
+  justify-content: center;
+
+}
+.grid div {
+  background-color: cadetblue;
+  color: aliceblue;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
 #main-vid-text {
-  display: flex;
-  justify-content: center;
-  padding: 15px 15px;
+  grid-column: 1 / span 2;
+  grid-row: 1;
 }
 
-#main-video {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 80px;
+#video-facts h4 {
+  padding: 10px;
 }
-
 #footer {
   position:relative;
   bottom: 0;

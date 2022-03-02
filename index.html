@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <title> Cats of Campus </title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="howler.min.js"> </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="jquery-3.6.0.min.js"> </script>
     <script src="script.js" defer> </script>
   </head>
   <body>
@@ -86,16 +90,22 @@
             </div>
           </div>
               </div>
-          </DIV>
+          </div>
 
-
-          <div id="main-vid-text">
+          <div class="grid">
+          <div id="main-vid-text" data-aos="fade-down">
             <h2> Do you want to experience what it is like to be a Campus Cat? </h2>
           </div>
-          <div id="main-video"> <!--a relevant video embedded-->
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/ilW1Rd6rwDA" title="YouTube video player" frameborder="0" allowfullscreen onclick="playAudio('cat-meow7.wav')"> </iframe>
+          <div id="video-facts" data-aos="fade-right">
+            <h4> Did you know that cats are nearsighted, but their peripheral vision and night vision are much better than those of humans? </h4>
+            <h4> Domestic cats spend about 70 per cent of the day sleeping and 15 per cent of the day grooming. Cats are evolved to sleep most of the time they don’t spend hunting, saving up their strength to catch their dinner. While they are not hunting at home, these evolutionary traits have carried over. Adult cats can sleep from 16 to 20 hours a day. Kittens and older cats can sleep almost 24 hours a day. </h4>
+          </div>
+          <div id="main-video" data-aos="fade-left"> <!--a relevant video embedded-->
+          <iframe width="800" height="450" src="https://www.youtube.com/embed/ilW1Rd6rwDA" title="YouTube video player" frameborder="0" allowfullscreen onclick="playAudio('cat-meow7.wav')"> </iframe>
+          </div>
           </div>
 </div>
+
 
 </div>
           <div id="footer"> <!--footer section-->
